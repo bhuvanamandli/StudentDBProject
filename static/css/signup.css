@@ -1,0 +1,18 @@
+body{
+    background-color: lightyellow;
+    color:darkgreen;
+}
+h1{
+    text-align: center;
+    color:green;
+    background-color: yellow;
+    border:2px Solid Blue;
+}
+h2{
+    color:orangered;
+}
+
+li{
+    font-size: 10px;
+    color:red;
+}

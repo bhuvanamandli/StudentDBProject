@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Student Homepage!!</title>
+        <link rel="stylesheet" href="{%static "css/studinfo.css"%}">
+    </head>
+<body>
+    <div class="container">
+        <h1>Student Information(complete)</h1>
+        <hr />
+        {% if students%}
+            {%for ss in students%}
+                <h2>{{ss.name}} Information</h2><hr />
+                <ul type="square">
+                    <li>Student Rollno : {{ss.rollno}}</li>
+                    <li>Student DOB : {{ss.dob}}</li>
+                    <li>Student Marks : {{ss.marks}}</li>
+                    <li>Student Email : {{ss.email}}</li>
+                    <li>Student Phone-Number : {{ss.phonenumber}}</li>
+                    <li>Student Address : {{ss.address}}</li>
+                </ul>
+            <br />
+            {%endfor%}
+        {%else%}
+            <p>Student Records Are Not Available</p>
+        {%endif%}
+    </div>
+
+</body>
+</html>

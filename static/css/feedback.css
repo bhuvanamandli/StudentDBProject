@@ -1,0 +1,20 @@
+body{
+    background-color: lightyellow;
+}
+h1{
+    text-align: center;
+    color:green;
+    background-color: yellow;
+    border:2px Solid Blue;
+}
+h2{
+    color:orangered;
+}
+p{
+    color: blue;
+}
+li{
+    font-size: 10px;
+    color:red;
+}
+

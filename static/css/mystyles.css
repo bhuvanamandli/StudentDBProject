@@ -1,0 +1,25 @@
+body{
+    background-color: lightcyan;
+}
+h1{
+    background-color: black;
+    color: hotpink;
+    border: 2px dashed pink;
+    border-radius: 2px;
+    text-align: center;
+}
+caption{
+    background-color: hotpink;
+    color: black;
+    border: 2px solid saddlebrown;
+    margin: auto;
+    padding:10px;
+    font-size: 20px;
+}
+table{
+    border: 15px groove hotpink;
+    width: 400px;
+    background-color: lightpink;
+    color: red;
+    text-align: center;
+}

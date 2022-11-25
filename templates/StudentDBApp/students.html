@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+          <meta charset="utf-8">
+          <title>Students-Data</title>
+        <link href="{% static 'css/mystyles.css' %}" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>StudentDB-Project with StudentDB-App...</h1>
+        <hr />
+        {%if studentlist %}
+            <table border="1" margin='auto'>
+                <caption>Student-Table-Details</caption>
+                <thead>
+                    <th>Names</th>
+                    <th>Marks</th>
+                </thead>
+                <tbody>
+                    {% for stud in studentlist %}
+                        <tr>
+                            <td>{{stud.name}}</td>
+                            <td>{{stud.marks}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No Students Records found...</p>
+        {% endif %}
+    </body>
+</html>

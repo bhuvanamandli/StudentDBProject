@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>SignUp Form</title>
+        <link href="{%static 'css/signup.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <div align='centre'>
+            <h1>Student Signup Form</h1>
+			<hr />
+			{%if sentdata %}
+				<h3>Signup-process done success..!!!</h3>
+			{%endif%}
+            <form method="post" action="">
+                {{form1.as_p}}
+                {%csrf_token%}
+                <input type="submit" value="Signup">
+            </form>
+        </div>
+    </body>
+</html>

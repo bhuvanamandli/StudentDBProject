@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="{%static "css/studentloginform.css"%}">
+        <title>Student Login Form</title>
+    </head>
+    <body>
+
+    <div align="center">
+        <h1>Student LOGIN Form</h1>
+        <hr />
+        <form action="/studentloginverifypageview/" method="post">
+            {{form1.as_ul}}
+            {%csrf_token%}
+            <input type="submit" name=""value="Submit">
+        </form>
+    </div>
+</body>
+</html>

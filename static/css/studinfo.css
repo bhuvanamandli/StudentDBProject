@@ -1,0 +1,23 @@
+body.container
+{
+    background: blue;
+    color:white;
+}
+h1{
+    text-align: center;
+    color: green;
+    font-size: 40px;
+    background-color: aqua;
+    border: 2px solid green;
+}
+h2{
+    color:yellow;
+    background-color: black;
+    border: 3px solid lightcyan;
+    font-size: 25px;
+}
+ul{
+    background-color: lightcyan;
+    color: darkred;
+    font-size: 20px;
+}
